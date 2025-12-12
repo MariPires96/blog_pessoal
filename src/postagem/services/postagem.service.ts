@@ -43,7 +43,8 @@ export class PostagemService {
                 titulo: ILike(`%${titulo}%`)
             },
             relations:{
-                tema: true
+                tema: true,
+                usuario: true
             }
         })
     }
