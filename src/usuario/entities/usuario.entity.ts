@@ -20,6 +20,7 @@ export class Usuario {
     @Column({ length: 255, nullable: false })
     usuario: string;
 
+    @ApiProperty()
     @MinLength(8)
     @IsNotEmpty()
     @Column({ length: 255, nullable: false })
